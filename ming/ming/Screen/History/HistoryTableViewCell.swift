@@ -33,6 +33,11 @@ final class HistoryTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
+        titleLabel.text = nil
+        
+        for view in self.hStackView.subviews {
+            view.removeFromSuperview()
+        }
     }
     
     private func render() {

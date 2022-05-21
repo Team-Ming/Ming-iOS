@@ -38,6 +38,7 @@
 		DD2427232839720800C160FF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427222839720800C160FF /* HistoryViewController.swift */; };
 		DD24272528397F5D00C160FF /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272428397F5D00C160FF /* History.swift */; };
 		DD24272728397F8100C160FF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272628397F8100C160FF /* HistoryTableViewCell.swift */; };
+		DD24272A2839807E00C160FF /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427292839807E00C160FF /* SuccessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		DD2427222839720800C160FF /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		DD24272428397F5D00C160FF /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DD24272628397F8100C160FF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		DD2427292839807E00C160FF /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -207,6 +209,7 @@
 		DD2426F528390DEF00C160FF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				DD2427282839803100C160FF /* View */,
 				B5A3FF5128396BCC00252DE0 /* Xib */,
 				DD2426E028390D0F00C160FF /* ViewController.swift */,
 				DD2426E228390D0F00C160FF /* Main.storyboard */,
@@ -296,6 +299,14 @@
 				DD24272628397F8100C160FF /* HistoryTableViewCell.swift */,
 			);
 			path = History;
+			sourceTree = "<group>";
+		};
+		DD2427282839803100C160FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DD2427292839807E00C160FF /* SuccessView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		FD070A064BB17F036E7A12D7 /* Pods */ = {
@@ -442,6 +453,7 @@
 				DD24271E28395AC900C160FF /* BaseNavigationController.swift in Sources */,
 				DD242709283913A000C160FF /* UIView+.swift in Sources */,
 				DD24272528397F5D00C160FF /* History.swift in Sources */,
+				DD24272A2839807E00C160FF /* SuccessView.swift in Sources */,
 				DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */,
 				DD2426DF28390D0F00C160FF /* SceneDelegate.swift in Sources */,
 				DD2426FF283911FE00C160FF /* UICollectionView+Reusable.swift in Sources */,
