@@ -13,6 +13,8 @@
 		23DB279628395E450028308F /* Tomorrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DB279528395E450028308F /* Tomorrow.storyboard */; };
 		23DB279828395E510028308F /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB279728395E510028308F /* TomorrowViewController.swift */; };
 		7546C79E065A267D3C1F7EC1 /* Pods_ming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */; };
+		B5A3FF5928396C6A00252DE0 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3FF5828396C6A00252DE0 /* CheckView.swift */; };
+		B5A3FF5B2839773800252DE0 /* check.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3FF5A2839773800252DE0 /* check.storyboard */; };
 		DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426DC28390D0F00C160FF /* AppDelegate.swift */; };
 		DD2426DF28390D0F00C160FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426DE28390D0F00C160FF /* SceneDelegate.swift */; };
 		DD2426E128390D0F00C160FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426E028390D0F00C160FF /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 		23DB279528395E450028308F /* Tomorrow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tomorrow.storyboard; sourceTree = "<group>"; };
 		23DB279728395E510028308F /* TomorrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
 		46EF0EF93EFF32ECC69243B1 /* Pods-ming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ming.debug.xcconfig"; path = "Target Support Files/Pods-ming/Pods-ming.debug.xcconfig"; sourceTree = "<group>"; };
+		B5A3FF5828396C6A00252DE0 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		B5A3FF5A2839773800252DE0 /* check.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = check.storyboard; sourceTree = "<group>"; };
 		DD2426D928390D0F00C160FF /* ming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2426DC28390D0F00C160FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD2426DE28390D0F00C160FF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +112,15 @@
 				E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5A3FF5128396BCC00252DE0 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				B5A3FF5828396C6A00252DE0 /* CheckView.swift */,
+				B5A3FF5A2839773800252DE0 /* check.storyboard */,
+			);
+			path = Xib;
 			sourceTree = "<group>";
 		};
 		DD2426D028390D0F00C160FF = {
@@ -190,6 +203,7 @@
 		DD2426F528390DEF00C160FF /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				B5A3FF5128396BCC00252DE0 /* Xib */,
 				DD2426E028390D0F00C160FF /* ViewController.swift */,
 				DD2426E228390D0F00C160FF /* Main.storyboard */,
 			);
@@ -347,6 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A3FF5B2839773800252DE0 /* check.storyboard in Resources */,
 				234B619F28396976001CF528 /* TomorrowTableViewCell.xib in Resources */,
 				23DB279628395E450028308F /* Tomorrow.storyboard in Resources */,
 				DD2426E928390D1100C160FF /* LaunchScreen.storyboard in Resources */,
@@ -405,6 +420,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5A3FF5928396C6A00252DE0 /* CheckView.swift in Sources */,
 				DD2426FD283911E400C160FF /* Reusable.swift in Sources */,
 				DD242714283922BC00C160FF /* MingService.swift in Sources */,
 				234B619E28396976001CF528 /* TomorrowTableViewCell.swift in Sources */,
