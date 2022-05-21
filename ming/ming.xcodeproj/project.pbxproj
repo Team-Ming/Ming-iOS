@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		234B619E28396976001CF528 /* TomorrowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B619C28396976001CF528 /* TomorrowTableViewCell.swift */; };
+		234B619F28396976001CF528 /* TomorrowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234B619D28396976001CF528 /* TomorrowTableViewCell.xib */; };
+		234B61A328396C34001CF528 /* TomorrowDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B61A228396C34001CF528 /* TomorrowDataModel.swift */; };
+		23DB279628395E450028308F /* Tomorrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DB279528395E450028308F /* Tomorrow.storyboard */; };
+		23DB279828395E510028308F /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB279728395E510028308F /* TomorrowViewController.swift */; };
 		7546C79E065A267D3C1F7EC1 /* Pods_ming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */; };
 		DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426DC28390D0F00C160FF /* AppDelegate.swift */; };
 		DD2426DF28390D0F00C160FF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426DE28390D0F00C160FF /* SceneDelegate.swift */; };
@@ -33,6 +38,11 @@
 
 /* Begin PBXFileReference section */
 		04954FD6131C501B8EE219BB /* Pods-ming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ming.release.xcconfig"; path = "Target Support Files/Pods-ming/Pods-ming.release.xcconfig"; sourceTree = "<group>"; };
+		234B619C28396976001CF528 /* TomorrowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowTableViewCell.swift; sourceTree = "<group>"; };
+		234B619D28396976001CF528 /* TomorrowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TomorrowTableViewCell.xib; sourceTree = "<group>"; };
+		234B61A228396C34001CF528 /* TomorrowDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowDataModel.swift; sourceTree = "<group>"; };
+		23DB279528395E450028308F /* Tomorrow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tomorrow.storyboard; sourceTree = "<group>"; };
+		23DB279728395E510028308F /* TomorrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
 		46EF0EF93EFF32ECC69243B1 /* Pods-ming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ming.debug.xcconfig"; path = "Target Support Files/Pods-ming/Pods-ming.debug.xcconfig"; sourceTree = "<group>"; };
 		DD2426D928390D0F00C160FF /* ming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ming.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD2426DC28390D0F00C160FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		234B619B28396958001CF528 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				234B619C28396976001CF528 /* TomorrowTableViewCell.swift */,
+				234B619D28396976001CF528 /* TomorrowTableViewCell.xib */,
+				234B61A228396C34001CF528 /* TomorrowDataModel.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		23DB279428395E2B0028308F /* Tomorrow */ = {
+			isa = PBXGroup;
+			children = (
+				234B619B28396958001CF528 /* Cell */,
+				23DB279528395E450028308F /* Tomorrow.storyboard */,
+				23DB279728395E510028308F /* TomorrowViewController.swift */,
+			);
+			path = Tomorrow;
+			sourceTree = "<group>";
+		};
 		26B69B77FCBBA56981CB3F74 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				DD242721283971F900C160FF /* History */,
+				23DB279428395E2B0028308F /* Tomorrow */,
 				DD24271A2839549B00C160FF /* Base */,
 				DD2426F428390DDE00C160FF /* Launch */,
 				DD2426F528390DEF00C160FF /* Main */,
@@ -316,6 +347,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234B619F28396976001CF528 /* TomorrowTableViewCell.xib in Resources */,
+				23DB279628395E450028308F /* Tomorrow.storyboard in Resources */,
 				DD2426E928390D1100C160FF /* LaunchScreen.storyboard in Resources */,
 				DD2427052839134F00C160FF /* Color.xcassets in Resources */,
 				DD2426E628390D1100C160FF /* Assets.xcassets in Resources */,
@@ -374,6 +407,9 @@
 			files = (
 				DD2426FD283911E400C160FF /* Reusable.swift in Sources */,
 				DD242714283922BC00C160FF /* MingService.swift in Sources */,
+				234B619E28396976001CF528 /* TomorrowTableViewCell.swift in Sources */,
+				234B61A328396C34001CF528 /* TomorrowDataModel.swift in Sources */,
+				23DB279828395E510028308F /* TomorrowViewController.swift in Sources */,
 				DD2427012839127100C160FF /* Image.swift in Sources */,
 				DD24272028395ADC00C160FF /* UIImage+.swift in Sources */,
 				DD2427162839230D00C160FF /* URLConstant.swift in Sources */,
