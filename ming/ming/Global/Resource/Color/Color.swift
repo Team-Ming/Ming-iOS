@@ -11,5 +11,6 @@ import UIKit.UIColor
  색상
  */
 struct Color {
-//    let red = UIColor(named: "")!
+    static let mingWhite = UIColor(named: "mingWhite")!
+    static let mingBlack = UIColor(named: "mingBlack")!
 }
