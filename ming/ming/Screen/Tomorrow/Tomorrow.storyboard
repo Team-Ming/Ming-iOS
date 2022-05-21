@@ -58,6 +58,9 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="doneBtnTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FGj-Bz-QfF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

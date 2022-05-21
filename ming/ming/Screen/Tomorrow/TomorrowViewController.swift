@@ -12,16 +12,24 @@ import Then
 
 class TomorrowViewController: UIViewController {
     
+    var sampleData : [TomorrowDataModel] = []
+    
     private let headerView = TomorrowHeaderView().then {
         $0.configure(text: "내일이 만들 기적")
     }
     
     private let footerView = TomorrowFooterView()
-
     @IBOutlet weak var miracleTextField: UITextField!
     @IBOutlet weak var doneBtn: UIButton!
-    
     @IBOutlet weak var miracleTableView: UITableView!
+    
+    @IBAction func doneBtnTap(_ sender: Any) {
+        guard let text = miracleTextField.text else { return }
+        sampleData.append(TomorrowDataModel(miracleText: text))
+        miracleTextField.text?.removeAll()
+        miracleTableView.reloadData()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
@@ -70,17 +78,15 @@ extension TomorrowViewController: UITableViewDelegate {
 
 extension TomorrowViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return TomorrowDataModel.sampleData.count
+        return sampleData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TomorrowTableViewCell.identifier, for: indexPath) as? TomorrowTableViewCell else { return UITableViewCell() }
-        cell.setData(TomorrowDataModel.sampleData[indexPath.row])
+        cell.setData(sampleData[indexPath.row])
         
         return cell
     }
-    
-    
 }
 
 final class TomorrowHeaderView: UIView {
