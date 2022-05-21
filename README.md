@@ -4,14 +4,18 @@
 
 다음 날 기억하고 싶은 것(내일 챙겨야 하는 준비물, 아침에 보고 싶은 나를 위한 멘트 등)을, 까먹지 않고 좀 더 잘 기억할 수 있도록 돕는 서비스입니다. 사용자는 자기 전에 기억하고 싶은 것을 적고, 다음 날 일어나서 그 내용을 그대로 한 번씩 따라 적음으로써 내용을 떠올립니다. 사용자가 내용을 모두 따라 적으면 자고 있던 귀여운 `밍`을 일으켜 오늘의 작은 기적을 이룰 수 있게 됩니다.
 
-# 역할분배
-| 이름 | 담당 |
-| --- | --- |
-| 윤서 | 성공뷰 아카이브뷰 |
-| 민재 | 확인뷰 말풍선클릭뷰 |
-| 소진 | 입력뷰 |
+### 구현 여부
+| 이름 | 화면 | 구현 여부 | 서버 연결 |
+|:----:|:-----:|:----:|:----:| 
+| 윤서 | 성공뷰 아카이브뷰 + 뷰간 데이터 연결 | ✅ | ✅  | 
+| 민재 | 확인뷰 팝업 | ✅ | | 
+| 소진 | 입력뷰 | ✅ | |
 
-지수: 전체적으로 감독
+
+### 프로젝트 구현 
+| iPhone 13 mini | iPhone SE |
+|:----:|:-----:|
+|  ![Simulator Screen Recording - iPhone 13 mini - 2022-05-22 at 08 21 41](https://user-images.githubusercontent.com/60292150/169672148-f486a108-3242-44e5-b7c1-8a90fbae8f3b.gif)| ![Simulator Screen Recording - iPhone SE (3rd generation) - 2022-05-22 at 08 23 17](https://user-images.githubusercontent.com/60292150/169672152-2ceca5d1-8f6e-4386-9a11-2377ec72e107.gif) | 
 
 # 코드 컨벤션
 
@@ -34,7 +38,6 @@
 `perf:` 성능 개선
 
 ### **Issue Title**
-<img width="862" alt="스크린샷 2022-05-22 01 47 58" src="https://user-images.githubusercontent.com/72497599/169661368-3a5f49a5-97c2-4468-9022-20c294e3a73d.png">
 
 `이슈`
 
@@ -87,3 +90,7 @@ Code Review가 완료되면 Pull Request 작성자가 develop Branch로 merge �
 - Snapkit
 - Then
 - Kingfisher
+ 
+### 새벽의 우리.... ㅋㅋ
+ <img width="566" alt="스크린샷 2022-05-22 08 05 05" src="https://user-images.githubusercontent.com/72497599/169671660-fac15482-54e3-4537-b9c5-cbe868dde557.png">
+
