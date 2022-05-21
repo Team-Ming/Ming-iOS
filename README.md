@@ -15,7 +15,7 @@
 ### 프로젝트 구현 
 | iPhone 13 mini | iPhone SE |
 |:----:|:-----:|
-|  |  | 
+|  ![Simulator Screen Recording - iPhone 13 mini - 2022-05-22 at 08 21 41](https://user-images.githubusercontent.com/60292150/169672148-f486a108-3242-44e5-b7c1-8a90fbae8f3b.gif)| ![Simulator Screen Recording - iPhone SE (3rd generation) - 2022-05-22 at 08 23 17](https://user-images.githubusercontent.com/60292150/169672152-2ceca5d1-8f6e-4386-9a11-2377ec72e107.gif) | 
 
 # 코드 컨벤션
 
