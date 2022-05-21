@@ -34,7 +34,6 @@
 `perf:` 성능 개선
 
 ### **Issue Title**
-<img width="862" alt="스크린샷 2022-05-22 01 47 58" src="https://user-images.githubusercontent.com/72497599/169661368-3a5f49a5-97c2-4468-9022-20c294e3a73d.png">
 
 `이슈`
 
@@ -87,3 +86,7 @@ Code Review가 완료되면 Pull Request 작성자가 develop Branch로 merge �
 - Snapkit
 - Then
 - Kingfisher
+ 
+### 새벽의 우리.... ㅋㅋ
+ <img width="566" alt="스크린샷 2022-05-22 08 05 05" src="https://user-images.githubusercontent.com/72497599/169671660-fac15482-54e3-4537-b9c5-cbe868dde557.png">
+
