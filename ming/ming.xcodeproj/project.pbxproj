@@ -45,6 +45,7 @@
 		DD24272A2839807E00C160FF /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427292839807E00C160FF /* SuccessView.swift */; };
 		DD24272C28398B6800C160FF /* MentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272B28398B6800C160FF /* MentionView.swift */; };
 		DD24272E2839999600C160FF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272D2839999600C160FF /* Repository.swift */; };
+		DD2427312839A8EA00C160FF /* Reponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427302839A8EA00C160FF /* Reponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		DD2427292839807E00C160FF /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		DD24272B28398B6800C160FF /* MentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentionView.swift; sourceTree = "<group>"; };
 		DD24272D2839999600C160FF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		DD2427302839A8EA00C160FF /* Reponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reponse.swift; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -293,6 +295,7 @@
 		DD24270C2839215900C160FF /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DD24272F2839A8D900C160FF /* Model */,
 				DD2427112839229800C160FF /* Base */,
 				DD242712283922A500C160FF /* Service */,
 			);
@@ -341,6 +344,14 @@
 				DD24272B28398B6800C160FF /* MentionView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DD24272F2839A8D900C160FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD2427302839A8EA00C160FF /* Reponse.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		FD070A064BB17F036E7A12D7 /* Pods */ = {
@@ -473,6 +484,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2427312839A8EA00C160FF /* Reponse.swift in Sources */,
 				B5A3FF5928396C6A00252DE0 /* CheckView.swift in Sources */,
 				DD2426FD283911E400C160FF /* Reusable.swift in Sources */,
 				DD242714283922BC00C160FF /* MingService.swift in Sources */,

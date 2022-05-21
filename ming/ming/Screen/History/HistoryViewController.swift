@@ -11,16 +11,7 @@ import SnapKit
 import Then
 
 final class HistoryViewController: UIViewController {
-    private let dummyData = [
-        History(title: "5월 22일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-        History(title: "5월 21일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-        History(title: "5월 20일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-        History(title: "5월 19일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-        History(title: "5월 18일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-        History(title: "5월 17일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-        History(title: "5월 16일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-        History(title: "5월 15일의 기적", checks: ["양치하기", "밥먹기", "잠 푹자기"]),
-    ]
+    private var dummyData: [History] = []
     private lazy var tableView = UITableView().then {
         $0.delegate = self
         $0.dataSource = self
@@ -33,6 +24,24 @@ final class HistoryViewController: UIViewController {
         super.viewDidLoad()
         configure()
         render()
+        
+        MingService.shared.getMiracle { result in
+            switch result {
+            case .success(let response):
+                dump(response)
+                guard let response = response as? Response else {
+                    break
+                }
+            
+                for item in response.data {
+                    self.dummyData.append(History(title: item.createdAt.date , checks: item.content))
+                }
+            default:
+                break
+            }
+            
+            self.tableView.reloadData()
+        }
     }
     
     private func configure() {
@@ -62,5 +71,26 @@ extension HistoryViewController: UITableViewDataSource {
         let cell: HistoryTableViewCell = tableView.dequeueReusableCell(indexPath: indexPath)
         cell.configure(history: dummyData[indexPath.row])
         return cell
+    }
+}
+
+extension String {
+    private static let iso8601Full: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        formatter.locale = Locale.autoupdatingCurrent
+        formatter.timeZone = TimeZone.autoupdatingCurrent
+        return formatter
+    }()
+
+    private static let dateOnly: DateFormatter = {
+         let formatter = DateFormatter()
+         formatter.dateFormat = "MM월 dd일 의 기적"
+         return formatter
+    }()
+
+    var date: String {
+        guard let date = String.iso8601Full.date(from: self) else { return "" }
+        return String.dateOnly.string(from: date)
     }
 }
