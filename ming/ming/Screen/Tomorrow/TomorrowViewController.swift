@@ -44,8 +44,10 @@ class TomorrowViewController: UIViewController {
     }
     
     private func registerNib(){
-        let nib = UINib(nibName: TomorrowTableViewCell.identifier, bundle: nil)
-        miracleTableView.register(nib, forCellReuseIdentifier: TomorrowTableViewCell.identifier)
+        let tommorowNib = UINib(nibName: TomorrowTableViewCell.identifier, bundle: nil)
+        let emptyNib = UINib(nibName: EmptyTableViewCell.identifier, bundle: nil)
+        miracleTableView.register(tommorowNib, forCellReuseIdentifier: TomorrowTableViewCell.identifier)
+        miracleTableView.register(emptyNib, forCellReuseIdentifier: TomorrowTableViewCell.identifier)
     }
     
     private func registerDelegate(){
@@ -64,11 +66,11 @@ extension TomorrowViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 54
+        return sampleData.isEmpty ? 200 : 54
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return footerView
+        return sampleData.count == 0 ? nil : footerView
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -82,10 +84,16 @@ extension TomorrowViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: TomorrowTableViewCell.identifier, for: indexPath) as? TomorrowTableViewCell else { return UITableViewCell() }
-        cell.setData(sampleData[indexPath.row])
-        
-        return cell
+        let count = sampleData.count
+        if count == 0 {
+            guard let emptyCell = tableView.dequeueReusableCell(withIdentifier: EmptyTableViewCell.identifier, for: indexPath) as? EmptyTableViewCell else { return UITableViewCell() }
+            return emptyCell
+        } else {
+            guard let cell = tableView.dequeueReusableCell(withIdentifier: TomorrowTableViewCell.identifier, for: indexPath) as? TomorrowTableViewCell else { return UITableViewCell() }
+            cell.setData(sampleData[indexPath.row])
+            
+            return cell
+        }
     }
 }
 
@@ -119,6 +127,7 @@ final class TomorrowHeaderView: UIView {
 final class TomorrowFooterView: UIView{
     private let button = UIButton().then {
         $0.setTitle("저장하기", for: .normal)
+        $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         $0.backgroundColor = Color.mingBlack
         $0.layer.cornerRadius = 10
     }
@@ -140,5 +149,26 @@ final class TomorrowFooterView: UIView{
             $0.width.equalTo(162)
         }
     }
-    
 }
+//
+//final class TomorrowEmptyView: UIView{
+//    private let image = UIImageView().then {
+//        $0.image = UIImage(named: "img_ming_lie_small")
+//    }
+//
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        render()
+//    }
+//
+//    required init?(coder: NSCoder) {
+//        fatalError("init(coder:) has not been implemented")
+//    }
+//
+//    private func render() {
+//        addSubview(image)
+//        image.snp.makeConstraints{
+//            $0.center.equalToSuperview()
+//        }
+//    }
+//}
