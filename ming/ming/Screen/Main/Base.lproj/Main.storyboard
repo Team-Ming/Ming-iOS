@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="1839.1304347826087" y="97.767857142857139"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Base Navigation Controller-->
         <scene sceneID="cvo-vF-wWX">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sv6-db-CMx" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Sv6-db-CMx" customClass="BaseNavigationController" customModule="ming" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6LM-WQ-CXR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

@@ -26,6 +26,8 @@
 		DD2427102839228C00C160FF /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24270F2839228C00C160FF /* NetworkResult.swift */; };
 		DD242714283922BC00C160FF /* MingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD242713283922BC00C160FF /* MingService.swift */; };
 		DD2427162839230D00C160FF /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427152839230D00C160FF /* URLConstant.swift */; };
+		DD24271E28395AC900C160FF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24271D28395AC900C160FF /* BaseNavigationController.swift */; };
+		DD24272028395ADC00C160FF /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24271F28395ADC00C160FF /* UIImage+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		DD24270F2839228C00C160FF /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		DD242713283922BC00C160FF /* MingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MingService.swift; sourceTree = "<group>"; };
 		DD2427152839230D00C160FF /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
+		DD24271D28395AC900C160FF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		DD24271F28395ADC00C160FF /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -134,6 +138,7 @@
 		DD2426F328390D6D00C160FF /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				DD24271A2839549B00C160FF /* Base */,
 				DD2426F428390DDE00C160FF /* Launch */,
 				DD2426F528390DEF00C160FF /* Main */,
 			);
@@ -164,6 +169,7 @@
 				DD2426F72839117600C160FF /* UIButton+.swift */,
 				DD242708283913A000C160FF /* UIView+.swift */,
 				DD24270A283913B600C160FF /* UIStackView+.swift */,
+				DD24271F28395ADC00C160FF /* UIImage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -220,6 +226,14 @@
 				DD242713283922BC00C160FF /* MingService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DD24271A2839549B00C160FF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DD24271D28395AC900C160FF /* BaseNavigationController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 		FD070A064BB17F036E7A12D7 /* Pods */ = {
@@ -350,10 +364,12 @@
 				DD2426FD283911E400C160FF /* Reusable.swift in Sources */,
 				DD242714283922BC00C160FF /* MingService.swift in Sources */,
 				DD2427012839127100C160FF /* Image.swift in Sources */,
+				DD24272028395ADC00C160FF /* UIImage+.swift in Sources */,
 				DD2427162839230D00C160FF /* URLConstant.swift in Sources */,
 				DD2426FB283911D900C160FF /* UITableView+Reusable.swift in Sources */,
 				DD2427102839228C00C160FF /* NetworkResult.swift in Sources */,
 				DD2426E128390D0F00C160FF /* ViewController.swift in Sources */,
+				DD24271E28395AC900C160FF /* BaseNavigationController.swift in Sources */,
 				DD242709283913A000C160FF /* UIView+.swift in Sources */,
 				DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */,
 				DD2426DF28390D0F00C160FF /* SceneDelegate.swift in Sources */,
