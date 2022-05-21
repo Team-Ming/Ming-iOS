@@ -18,6 +18,11 @@ class ViewController: UIViewController {
     
     var tag = 0
     
+    @IBAction func showHistoryViewController(_ sender: Any) {
+        
+        self.navigationController?.pushViewController(HistoryViewController(), animated: true)
+    }
+    
     override func loadView() {
         if Repository.shared.checks.isEmpty {
             self.view = mentionView
