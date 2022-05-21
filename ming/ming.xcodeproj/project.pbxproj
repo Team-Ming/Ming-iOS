@@ -14,6 +14,15 @@
 		DD2426E428390D0F00C160FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2426E228390D0F00C160FF /* Main.storyboard */; };
 		DD2426E628390D1100C160FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2426E528390D1100C160FF /* Assets.xcassets */; };
 		DD2426E928390D1100C160FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD2426E728390D1100C160FF /* LaunchScreen.storyboard */; };
+		DD2426F82839117600C160FF /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426F72839117600C160FF /* UIButton+.swift */; };
+		DD2426FB283911D900C160FF /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426FA283911D900C160FF /* UITableView+Reusable.swift */; };
+		DD2426FD283911E400C160FF /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426FC283911E400C160FF /* Reusable.swift */; };
+		DD2426FF283911FE00C160FF /* UICollectionView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426FE283911FE00C160FF /* UICollectionView+Reusable.swift */; };
+		DD2427012839127100C160FF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427002839127100C160FF /* Image.swift */; };
+		DD242703283912F100C160FF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD242702283912F100C160FF /* Color.swift */; };
+		DD2427052839134F00C160FF /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2427042839134F00C160FF /* Color.xcassets */; };
+		DD242709283913A000C160FF /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD242708283913A000C160FF /* UIView+.swift */; };
+		DD24270B283913B600C160FF /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24270A283913B600C160FF /* UIStackView+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,15 @@
 		DD2426E528390D1100C160FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD2426E828390D1100C160FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD2426EA28390D1100C160FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD2426F72839117600C160FF /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		DD2426FA283911D900C160FF /* UITableView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		DD2426FC283911E400C160FF /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		DD2426FE283911FE00C160FF /* UICollectionView+Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Reusable.swift"; sourceTree = "<group>"; };
+		DD2427002839127100C160FF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		DD242702283912F100C160FF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		DD2427042839134F00C160FF /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		DD242708283913A000C160FF /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		DD24270A283913B600C160FF /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -80,6 +98,7 @@
 		DD2426F028390D2000C160FF /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				DD2426F62839112100C160FF /* Extension */,
 				DD2426F228390D5E00C160FF /* Resource */,
 				DD2426F128390D4100C160FF /* Support */,
 			);
@@ -99,7 +118,8 @@
 		DD2426F228390D5E00C160FF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				DD2426E528390D1100C160FF /* Assets.xcassets */,
+				DD2427072839135E00C160FF /* Color */,
+				DD2427062839135300C160FF /* Image */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -130,13 +150,51 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
+		DD2426F62839112100C160FF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DD2426F9283911C500C160FF /* Reusable */,
+				DD2426F72839117600C160FF /* UIButton+.swift */,
+				DD242708283913A000C160FF /* UIView+.swift */,
+				DD24270A283913B600C160FF /* UIStackView+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		DD2426F9283911C500C160FF /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				DD2426FC283911E400C160FF /* Reusable.swift */,
+				DD2426FA283911D900C160FF /* UITableView+Reusable.swift */,
+				DD2426FE283911FE00C160FF /* UICollectionView+Reusable.swift */,
+			);
+			path = Reusable;
+			sourceTree = "<group>";
+		};
+		DD2427062839135300C160FF /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				DD2427002839127100C160FF /* Image.swift */,
+				DD2426E528390D1100C160FF /* Assets.xcassets */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		DD2427072839135E00C160FF /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				DD242702283912F100C160FF /* Color.swift */,
+				DD2427042839134F00C160FF /* Color.xcassets */,
+			);
+			path = Color;
+			sourceTree = "<group>";
+		};
 		FD070A064BB17F036E7A12D7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				46EF0EF93EFF32ECC69243B1 /* Pods-ming.debug.xcconfig */,
 				04954FD6131C501B8EE219BB /* Pods-ming.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -201,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2426E928390D1100C160FF /* LaunchScreen.storyboard in Resources */,
+				DD2427052839134F00C160FF /* Color.xcassets in Resources */,
 				DD2426E628390D1100C160FF /* Assets.xcassets in Resources */,
 				DD2426E428390D0F00C160FF /* Main.storyboard in Resources */,
 			);
@@ -255,9 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD2426FD283911E400C160FF /* Reusable.swift in Sources */,
+				DD2427012839127100C160FF /* Image.swift in Sources */,
+				DD2426FB283911D900C160FF /* UITableView+Reusable.swift in Sources */,
 				DD2426E128390D0F00C160FF /* ViewController.swift in Sources */,
+				DD242709283913A000C160FF /* UIView+.swift in Sources */,
 				DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */,
 				DD2426DF28390D0F00C160FF /* SceneDelegate.swift in Sources */,
+				DD2426FF283911FE00C160FF /* UICollectionView+Reusable.swift in Sources */,
+				DD24270B283913B600C160FF /* UIStackView+.swift in Sources */,
+				DD2426F82839117600C160FF /* UIButton+.swift in Sources */,
+				DD242703283912F100C160FF /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
