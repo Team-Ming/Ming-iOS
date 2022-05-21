@@ -11,5 +11,5 @@ import UIKit.UIImage
  이미지
  */
 struct Image {
-    //static let icon = UIImage(named: "")!
+    static let mingBlackBoxBig = UIImage(named: "ming_black_box_line_big")!
 }

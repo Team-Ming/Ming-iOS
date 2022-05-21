@@ -33,6 +33,7 @@
 		DD2427162839230D00C160FF /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427152839230D00C160FF /* URLConstant.swift */; };
 		DD24271E28395AC900C160FF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24271D28395AC900C160FF /* BaseNavigationController.swift */; };
 		DD24272028395ADC00C160FF /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24271F28395ADC00C160FF /* UIImage+.swift */; };
+		DD2427232839720800C160FF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427222839720800C160FF /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,7 @@
 		DD2427152839230D00C160FF /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		DD24271D28395AC900C160FF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		DD24271F28395ADC00C160FF /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		DD2427222839720800C160FF /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -168,6 +170,7 @@
 		DD2426F328390D6D00C160FF /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				DD242721283971F900C160FF /* History */,
 				23DB279428395E2B0028308F /* Tomorrow */,
 				DD24271A2839549B00C160FF /* Base */,
 				DD2426F428390DDE00C160FF /* Launch */,
@@ -265,6 +268,14 @@
 				DD24271D28395AC900C160FF /* BaseNavigationController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		DD242721283971F900C160FF /* History */ = {
+			isa = PBXGroup;
+			children = (
+				DD2427222839720800C160FF /* HistoryViewController.swift */,
+			);
+			path = History;
 			sourceTree = "<group>";
 		};
 		FD070A064BB17F036E7A12D7 /* Pods */ = {
@@ -412,6 +423,7 @@
 				DD2426FF283911FE00C160FF /* UICollectionView+Reusable.swift in Sources */,
 				DD24270B283913B600C160FF /* UIStackView+.swift in Sources */,
 				DD2426F82839117600C160FF /* UIButton+.swift in Sources */,
+				DD2427232839720800C160FF /* HistoryViewController.swift in Sources */,
 				DD242703283912F100C160FF /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
