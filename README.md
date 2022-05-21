@@ -62,8 +62,22 @@
 closed #이슈번호
 ```
 
-# Git Branch
-develop - feature
+### Git Branch
+Branch를 생성하기 전 Issue를 먼저 작성한다. Issue 작성 후 생성되는 번호와 Issue의 간략한 설명 등을 조합하여 Branch의 이름을 결정한다.
+
+<Prefix>/<Issue_Number>-<Description> 의 양식을 따른다.
+
+develop : feature 브랜치에서 구현된 기능들이 merge될 브랜치. default
+feature : 기능을 개발하는 브랜치, 이슈별/작업별로 브랜치를 생성하여 기능을 개발한다
+main : 개발이 완료된 산출물이 저장될 공간
+
+### Git Flow
+Issue를 생성한다.
+feature Branch를 생성한다.
+Add - Commit - Push - Pull Request 의 과정을 거친다.
+Pull Request가 작성되면 작성자 이외의 다른 팀원이 Code Review를 한다.
+Code Review가 완료되면 Pull Request 작성자가 develop Branch로 merge 한다.
+종료된 Issue와 Pull Request의 Label과 Project를 관리한다.
 
 # 프로젝트 폴더링
 <img width="389" alt="스크린샷 2022-05-22 01 54 31" src="https://user-images.githubusercontent.com/72497599/169661548-88c3c1f1-3375-4d0c-920f-94997324e4c7.png">
