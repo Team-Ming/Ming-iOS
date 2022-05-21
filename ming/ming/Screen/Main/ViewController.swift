@@ -8,9 +8,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let baseView = CheckView()
+    
+    override func loadView() {
+        self.view = baseView
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "오늘의 기적"
     }
 }
 
