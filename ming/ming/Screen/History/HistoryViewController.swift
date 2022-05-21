@@ -72,7 +72,7 @@ struct History {
 
 final class HistoryTableViewCell: UITableViewCell {
     private let backgroundImageView = UIImageView().then {
-        $0.image = Image.mingBlackBoxLine
+        $0.image = Image.mingBlackBoxBig
         $0.contentMode = .scaleAspectFit
     }
     private let titleLabel = UILabel().then {
