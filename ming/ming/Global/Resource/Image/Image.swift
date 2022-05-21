@@ -15,4 +15,5 @@ struct Image {
     static let mingBlackBoxLine = UIImage(named: "ming_black_box_line")!
     static let mingStand = UIImage(named: "img_ming_stand")!
     static let bottomBackground = UIImage(named: "back_ground_3")!
+    static let speechBubble4 = UIImage(named: "img_speech_bubble_4")!
 }

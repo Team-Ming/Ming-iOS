@@ -39,6 +39,7 @@
 		DD24272528397F5D00C160FF /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272428397F5D00C160FF /* History.swift */; };
 		DD24272728397F8100C160FF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272628397F8100C160FF /* HistoryTableViewCell.swift */; };
 		DD24272A2839807E00C160FF /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427292839807E00C160FF /* SuccessView.swift */; };
+		DD24272C28398B6800C160FF /* MentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272B28398B6800C160FF /* MentionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,7 @@
 		DD24272428397F5D00C160FF /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		DD24272628397F8100C160FF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		DD2427292839807E00C160FF /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		DD24272B28398B6800C160FF /* MentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentionView.swift; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -305,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				DD2427292839807E00C160FF /* SuccessView.swift */,
+				DD24272B28398B6800C160FF /* MentionView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -460,6 +463,7 @@
 				DD24270B283913B600C160FF /* UIStackView+.swift in Sources */,
 				DD2426F82839117600C160FF /* UIButton+.swift in Sources */,
 				DD2427232839720800C160FF /* HistoryViewController.swift in Sources */,
+				DD24272C28398B6800C160FF /* MentionView.swift in Sources */,
 				DD242703283912F100C160FF /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

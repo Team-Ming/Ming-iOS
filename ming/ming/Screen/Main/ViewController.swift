@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let baseView = SuccessView()
+    let baseView = MentionView()
     
     override func loadView() {
         self.view = baseView
