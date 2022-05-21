@@ -36,6 +36,8 @@
 		DD24271E28395AC900C160FF /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24271D28395AC900C160FF /* BaseNavigationController.swift */; };
 		DD24272028395ADC00C160FF /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24271F28395ADC00C160FF /* UIImage+.swift */; };
 		DD2427232839720800C160FF /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427222839720800C160FF /* HistoryViewController.swift */; };
+		DD24272528397F5D00C160FF /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272428397F5D00C160FF /* History.swift */; };
+		DD24272728397F8100C160FF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272628397F8100C160FF /* HistoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		DD24271D28395AC900C160FF /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		DD24271F28395ADC00C160FF /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 		DD2427222839720800C160FF /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		DD24272428397F5D00C160FF /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		DD24272628397F8100C160FF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -288,6 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				DD2427222839720800C160FF /* HistoryViewController.swift */,
+				DD24272428397F5D00C160FF /* History.swift */,
+				DD24272628397F8100C160FF /* HistoryTableViewCell.swift */,
 			);
 			path = History;
 			sourceTree = "<group>";
@@ -428,12 +434,14 @@
 				23DB279828395E510028308F /* TomorrowViewController.swift in Sources */,
 				DD2427012839127100C160FF /* Image.swift in Sources */,
 				DD24272028395ADC00C160FF /* UIImage+.swift in Sources */,
+				DD24272728397F8100C160FF /* HistoryTableViewCell.swift in Sources */,
 				DD2427162839230D00C160FF /* URLConstant.swift in Sources */,
 				DD2426FB283911D900C160FF /* UITableView+Reusable.swift in Sources */,
 				DD2427102839228C00C160FF /* NetworkResult.swift in Sources */,
 				DD2426E128390D0F00C160FF /* ViewController.swift in Sources */,
 				DD24271E28395AC900C160FF /* BaseNavigationController.swift in Sources */,
 				DD242709283913A000C160FF /* UIView+.swift in Sources */,
+				DD24272528397F5D00C160FF /* History.swift in Sources */,
 				DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */,
 				DD2426DF28390D0F00C160FF /* SceneDelegate.swift in Sources */,
 				DD2426FF283911FE00C160FF /* UICollectionView+Reusable.swift in Sources */,
