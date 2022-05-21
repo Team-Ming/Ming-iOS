@@ -10,6 +10,8 @@
 		234B619E28396976001CF528 /* TomorrowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B619C28396976001CF528 /* TomorrowTableViewCell.swift */; };
 		234B619F28396976001CF528 /* TomorrowTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234B619D28396976001CF528 /* TomorrowTableViewCell.xib */; };
 		234B61A328396C34001CF528 /* TomorrowDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234B61A228396C34001CF528 /* TomorrowDataModel.swift */; };
+		23AB215828398E4F006045D7 /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23AB215628398E4F006045D7 /* EmptyTableViewCell.swift */; };
+		23AB215928398E4F006045D7 /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23AB215728398E4F006045D7 /* EmptyTableViewCell.xib */; };
 		23DB279628395E450028308F /* Tomorrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DB279528395E450028308F /* Tomorrow.storyboard */; };
 		23DB279828395E510028308F /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB279728395E510028308F /* TomorrowViewController.swift */; };
 		7546C79E065A267D3C1F7EC1 /* Pods_ming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */; };
@@ -47,6 +49,8 @@
 		234B619C28396976001CF528 /* TomorrowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowTableViewCell.swift; sourceTree = "<group>"; };
 		234B619D28396976001CF528 /* TomorrowTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TomorrowTableViewCell.xib; sourceTree = "<group>"; };
 		234B61A228396C34001CF528 /* TomorrowDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowDataModel.swift; sourceTree = "<group>"; };
+		23AB215628398E4F006045D7 /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		23AB215728398E4F006045D7 /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		23DB279528395E450028308F /* Tomorrow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tomorrow.storyboard; sourceTree = "<group>"; };
 		23DB279728395E510028308F /* TomorrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
 		46EF0EF93EFF32ECC69243B1 /* Pods-ming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ming.debug.xcconfig"; path = "Target Support Files/Pods-ming/Pods-ming.debug.xcconfig"; sourceTree = "<group>"; };
@@ -100,6 +104,8 @@
 				234B619C28396976001CF528 /* TomorrowTableViewCell.swift */,
 				234B619D28396976001CF528 /* TomorrowTableViewCell.xib */,
 				234B61A228396C34001CF528 /* TomorrowDataModel.swift */,
+				23AB215628398E4F006045D7 /* EmptyTableViewCell.swift */,
+				23AB215728398E4F006045D7 /* EmptyTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -382,6 +388,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B5A3FF5B2839773800252DE0 /* check.storyboard in Resources */,
+				23AB215928398E4F006045D7 /* EmptyTableViewCell.xib in Resources */,
 				234B619F28396976001CF528 /* TomorrowTableViewCell.xib in Resources */,
 				23DB279628395E450028308F /* Tomorrow.storyboard in Resources */,
 				DD2426E928390D1100C160FF /* LaunchScreen.storyboard in Resources */,
@@ -465,6 +472,7 @@
 				DD2427232839720800C160FF /* HistoryViewController.swift in Sources */,
 				DD24272C28398B6800C160FF /* MentionView.swift in Sources */,
 				DD242703283912F100C160FF /* Color.swift in Sources */,
+				23AB215828398E4F006045D7 /* EmptyTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
