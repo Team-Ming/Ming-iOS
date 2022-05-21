@@ -9,15 +9,45 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let baseView = MentionView()
+    let checkView = CheckView()
+    var dismissCnt = 0
     
     override func loadView() {
-        self.view = baseView
+        self.view = checkView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "오늘의 기적"
+        setAction()
+    }
+    
+    
+    func setAction() {
+        checkView.firstBubble.addTarget(self, action: #selector(popUp), for: .touchUpInside)
+        checkView.secondBubble.addTarget(self, action: #selector(popUp), for: .touchUpInside)
+        checkView.thirdBubble.addTarget(self, action: #selector(popUp), for: .touchUpInside)
+    }
+    
+    @objc func popUp(sender: UIButton) {
+        guard let customPopUp = UIStoryboard(name: "PopUp", bundle: nil).instantiateViewController(withIdentifier: "PopUpViewController") as? PopUpViewController
+        else { return }
+        
+        switch sender {
+        case checkView.firstBubble:
+            customPopUp.compareText = checkView.firstLabel.text ?? ""
+        case checkView.secondBubble:
+            customPopUp.compareText = checkView.secondLabel.text ?? ""
+        case checkView.thirdBubble:
+            customPopUp.compareText = checkView.thirdLabel.text ?? ""
+        default:
+            customPopUp.compareText = ""
+        }
+        
+        customPopUp.modalTransitionStyle = .crossDissolve
+        customPopUp.modalPresentationStyle = .overFullScreen
+        
+        self.present(customPopUp, animated: true)
     }
 }
 

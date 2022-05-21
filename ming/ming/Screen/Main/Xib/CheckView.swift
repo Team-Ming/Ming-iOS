@@ -13,16 +13,13 @@ import Then
 class CheckView: UIView {
     
     let firstBubble: UIButton = UIButton().then { button in
-        button.backgroundColor = .red
-        button.setImage(UIImage(systemName: "house.fill"), for: .normal)
+        button.setImage(UIImage(named: "img_speech_bubble1"), for: .normal)
     }
     let secondBubble: UIButton = UIButton().then { button in
-        button.backgroundColor = . red
-        button.setImage(UIImage(systemName: "house.fill"), for: .normal)
+        button.setImage(UIImage(named: "img_speech_bubble2"), for: .normal)
     }
     let thirdBubble: UIButton = UIButton().then { button in
-        button.backgroundColor = . red
-        button.setImage(UIImage(systemName: "house.fill"), for: .normal)
+        button.setImage(UIImage(named: "img_speech_bubble3"), for: .normal)
     }
     
     let bubbleImage: UIImageView = UIImageView(image: UIImage(named: "bubble_stitch"))
@@ -31,16 +28,19 @@ class CheckView: UIView {
     let firstLabel = UILabel().then { label in
         label.text = "솝커톤"
         label.font =  .boldSystemFont(ofSize: 20)
+        label.textAlignment = .center
     }
     
     let secondLabel = UILabel().then { label in
         label.text = "솝커톤"
         label.font =  .boldSystemFont(ofSize: 20)
+        label.textAlignment = .center
     }
     
     let thirdLabel = UILabel().then { label in
         label.text = "솝커톤"
         label.font =  .boldSystemFont(ofSize: 20)
+        label.textAlignment = .center
     }
     
     override init(frame: CGRect) {
@@ -60,6 +60,7 @@ class CheckView: UIView {
         self.firstBubble.snp.makeConstraints {
             $0.top.equalToSuperview().offset(103)
             $0.leading.equalToSuperview().offset(44)
+            $0.height.equalTo(137)
         }
         
         firstBubble.addSubviews(firstLabel)
@@ -73,6 +74,11 @@ class CheckView: UIView {
             $0.top.equalTo(firstBubble.snp.top).inset(137)
             $0.leading.equalToSuperview().offset(183)
             $0.trailing.equalToSuperview().offset(37)
+            $0.height.equalTo(102)
+        }
+        secondBubble.addSubviews(secondLabel)
+        self.secondLabel.snp.makeConstraints {
+            $0.edges.equalToSuperview().inset(30)
         }
         
         
@@ -80,6 +86,11 @@ class CheckView: UIView {
         self.thirdBubble.snp.makeConstraints {
             $0.top.equalTo(secondBubble.snp.bottom)
             $0.leading.equalToSuperview().offset(57)
+            $0.height.equalTo(121)
+        }
+        thirdBubble.addSubviews(thirdLabel)
+        self.thirdLabel.snp.makeConstraints {
+            $0.edges.equalToSuperview().inset(30)
         }
         
         self.addSubviews(bubbleImage)
@@ -94,7 +105,6 @@ class CheckView: UIView {
             $0.leading.equalToSuperview().offset(108)
             $0.bottom.equalToSuperview().offset(-58)
         }
-        
-        
     }
+    
 }
