@@ -23,6 +23,9 @@
 		DD2427052839134F00C160FF /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD2427042839134F00C160FF /* Color.xcassets */; };
 		DD242709283913A000C160FF /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD242708283913A000C160FF /* UIView+.swift */; };
 		DD24270B283913B600C160FF /* UIStackView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24270A283913B600C160FF /* UIStackView+.swift */; };
+		DD2427102839228C00C160FF /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24270F2839228C00C160FF /* NetworkResult.swift */; };
+		DD242714283922BC00C160FF /* MingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD242713283922BC00C160FF /* MingService.swift */; };
+		DD2427162839230D00C160FF /* URLConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427152839230D00C160FF /* URLConstant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		DD2427042839134F00C160FF /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
 		DD242708283913A000C160FF /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		DD24270A283913B600C160FF /* UIStackView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+.swift"; sourceTree = "<group>"; };
+		DD24270F2839228C00C160FF /* NetworkResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		DD242713283922BC00C160FF /* MingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MingService.swift; sourceTree = "<group>"; };
+		DD2427152839230D00C160FF /* URLConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLConstant.swift; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -89,6 +95,7 @@
 		DD2426DB28390D0F00C160FF /* ming */ = {
 			isa = PBXGroup;
 			children = (
+				DD24270C2839215900C160FF /* Network */,
 				DD2426F028390D2000C160FF /* Global */,
 				DD2426F328390D6D00C160FF /* Screen */,
 			);
@@ -187,6 +194,32 @@
 				DD2427042839134F00C160FF /* Color.xcassets */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		DD24270C2839215900C160FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DD2427112839229800C160FF /* Base */,
+				DD242712283922A500C160FF /* Service */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DD2427112839229800C160FF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DD24270F2839228C00C160FF /* NetworkResult.swift */,
+				DD2427152839230D00C160FF /* URLConstant.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DD242712283922A500C160FF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DD242713283922BC00C160FF /* MingService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 		FD070A064BB17F036E7A12D7 /* Pods */ = {
@@ -315,8 +348,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD2426FD283911E400C160FF /* Reusable.swift in Sources */,
+				DD242714283922BC00C160FF /* MingService.swift in Sources */,
 				DD2427012839127100C160FF /* Image.swift in Sources */,
+				DD2427162839230D00C160FF /* URLConstant.swift in Sources */,
 				DD2426FB283911D900C160FF /* UITableView+Reusable.swift in Sources */,
+				DD2427102839228C00C160FF /* NetworkResult.swift in Sources */,
 				DD2426E128390D0F00C160FF /* ViewController.swift in Sources */,
 				DD242709283913A000C160FF /* UIView+.swift in Sources */,
 				DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */,
