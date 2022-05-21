@@ -15,6 +15,8 @@ class TomorrowViewController: UIViewController {
     private let headerView = TomorrowHeaderView().then {
         $0.configure(text: "내일이 만들 기적")
     }
+    
+    private let footerView = TomorrowFooterView()
 
     @IBOutlet weak var miracleTextField: UITextField!
     @IBOutlet weak var doneBtn: UIButton!
@@ -55,6 +57,14 @@ extension TomorrowViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 54
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 70
     }
 }
 
@@ -98,4 +108,31 @@ final class TomorrowHeaderView: UIView {
     func configure(text: String) {
         label.text = text
     }
+}
+
+final class TomorrowFooterView: UIView{
+    private let button = UIButton().then {
+        $0.setTitle("저장하기", for: .normal)
+        $0.backgroundColor = Color.mingBlack
+        $0.layer.cornerRadius = 10
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        render()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func render() {
+        addSubview(button)
+        button.snp.makeConstraints{
+            $0.center.equalToSuperview()
+            $0.height.equalTo(45)
+            $0.width.equalTo(162)
+        }
+    }
+    
 }
