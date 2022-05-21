@@ -8,6 +8,7 @@
 import UIKit
 
 class PopUpViewController: UIViewController {
+    weak var delegate: ReloadDelegate?
     
     let vc = ViewController()
     
@@ -30,9 +31,10 @@ class PopUpViewController: UIViewController {
     }
     
     @IBAction func confirmBtnDidTapped(_ sender: UIButton) {
-
         if compareLabel.text == textField.text {
             vc.dismissCnt += 1
+            
+            delegate?.reload(self)
             self.dismiss(animated: true)
         }
     }

@@ -32,7 +32,7 @@ final class MentionView: UIView {
         $0.contentMode = .scaleAspectFit
     }
 
-    private let button = UIButton().then {
+    let button = UIButton().then {
         $0.backgroundColor = Color.mingBlack
         $0.titleLabel?.font = .boldSystemFont(ofSize: 20)
         $0.setTitle("기적 만들기", for: .normal)

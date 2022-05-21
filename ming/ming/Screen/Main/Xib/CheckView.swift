@@ -26,19 +26,16 @@ class CheckView: UIView {
     let mingImage: UIImageView = UIImageView(image: UIImage(named: "img_ming_lie"))
     
     let firstLabel = UILabel().then { label in
-        label.text = "솝커톤"
         label.font =  .boldSystemFont(ofSize: 20)
         label.textAlignment = .center
     }
     
     let secondLabel = UILabel().then { label in
-        label.text = "솝커톤"
         label.font =  .boldSystemFont(ofSize: 20)
         label.textAlignment = .center
     }
     
     let thirdLabel = UILabel().then { label in
-        label.text = "솝커톤"
         label.font =  .boldSystemFont(ofSize: 20)
         label.textAlignment = .center
     }
@@ -105,6 +102,12 @@ class CheckView: UIView {
             $0.leading.equalToSuperview().offset(108)
             $0.bottom.equalToSuperview().offset(-58)
         }
+    }
+    
+    func configure(first: String?, second: String?, third: String?) {
+        self.firstLabel.text = first
+        self.secondLabel.text = second
+        self.thirdLabel.text = third
     }
     
 }

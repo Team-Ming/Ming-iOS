@@ -31,7 +31,7 @@ final class SuccessView: UIView {
         $0.contentMode = .scaleAspectFit
     }
     
-    private let button = UIButton().then {
+    let button = UIButton().then {
         $0.backgroundColor = Color.mingBlack
         $0.titleLabel?.font = .boldSystemFont(ofSize: 20)
         $0.setTitle("처음으로", for: .normal)
@@ -43,8 +43,6 @@ final class SuccessView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         render()
-        
-        configure(checks: "아아", "뜨아아", "아ㅇㅇㅇ")
     }
     
     required init?(coder: NSCoder) {
@@ -76,7 +74,7 @@ final class SuccessView: UIView {
         }
     }
     
-    func configure(checks: String...) {
+    func configure(checks: [String]) {
         for check in checks {
             let boxView = BlackBoxLineView()
             boxView.text = check

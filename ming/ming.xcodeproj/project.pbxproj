@@ -44,6 +44,7 @@
 		DD24272728397F8100C160FF /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272628397F8100C160FF /* HistoryTableViewCell.swift */; };
 		DD24272A2839807E00C160FF /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2427292839807E00C160FF /* SuccessView.swift */; };
 		DD24272C28398B6800C160FF /* MentionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272B28398B6800C160FF /* MentionView.swift */; };
+		DD24272E2839999600C160FF /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD24272D2839999600C160FF /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		DD24272628397F8100C160FF /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		DD2427292839807E00C160FF /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
 		DD24272B28398B6800C160FF /* MentionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentionView.swift; sourceTree = "<group>"; };
+		DD24272D2839999600C160FF /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -191,6 +193,7 @@
 				DD2426F62839112100C160FF /* Extension */,
 				DD2426F228390D5E00C160FF /* Resource */,
 				DD2426F128390D4100C160FF /* Support */,
+				DD24272D2839999600C160FF /* Repository.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 				234B619E28396976001CF528 /* TomorrowTableViewCell.swift in Sources */,
 				234B61A328396C34001CF528 /* TomorrowDataModel.swift in Sources */,
 				23DB279828395E510028308F /* TomorrowViewController.swift in Sources */,
+				DD24272E2839999600C160FF /* Repository.swift in Sources */,
 				DD2427012839127100C160FF /* Image.swift in Sources */,
 				DD24272028395ADC00C160FF /* UIImage+.swift in Sources */,
 				DD24272728397F8100C160FF /* HistoryTableViewCell.swift in Sources */,

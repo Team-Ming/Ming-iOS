@@ -10,15 +10,27 @@ import UIKit
 import SnapKit
 import Then
 
+protocol ReloadDelegate: AnyObject {
+    func reload(_ viewController: UIViewController)
+}
+
 class TomorrowViewController: UIViewController {
+    weak var delegate: ReloadDelegate?
     
-    var sampleData : [TomorrowDataModel] = []
+    var sampleData : [TomorrowDataModel] = [] {
+        didSet {
+            Repository.shared.checks = sampleData.map { $0.miracleText }
+        }
+    }
     
     private let headerView = TomorrowHeaderView().then {
         $0.configure(text: "내일이 만들 기적")
     }
     
-    private let footerView = TomorrowFooterView()
+    private lazy var footerView = TomorrowFooterView().then {
+        $0.button.addTarget(self, action: #selector(dismissViewController), for: .touchUpInside)
+    }
+    
     @IBOutlet weak var miracleTextField: UITextField!
     @IBOutlet weak var doneBtn: UIButton!
     @IBOutlet weak var miracleTableView: UITableView!
@@ -37,6 +49,12 @@ class TomorrowViewController: UIViewController {
         registerDelegate()
     }
     
+    @objc
+    func dismissViewController() {
+        delegate?.reload(self)
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     private func configureUI(){
         self.navigationItem.title = "내일의 기적"
         doneBtn.backgroundColor = Color.mingWhite
@@ -45,9 +63,9 @@ class TomorrowViewController: UIViewController {
     
     private func registerNib(){
         let tommorowNib = UINib(nibName: TomorrowTableViewCell.identifier, bundle: nil)
-        let emptyNib = UINib(nibName: EmptyTableViewCell.identifier, bundle: nil)
+//        let emptyNib = UINib(nibName: EmptyTableViewCell.identifier, bundle: nil)
         miracleTableView.register(tommorowNib, forCellReuseIdentifier: TomorrowTableViewCell.identifier)
-        miracleTableView.register(emptyNib, forCellReuseIdentifier: TomorrowTableViewCell.identifier)
+//        miracleTableView.register(emptyNib, forCellReuseIdentifier: TomorrowTableViewCell.identifier)
     }
     
     private func registerDelegate(){
@@ -66,11 +84,13 @@ extension TomorrowViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return sampleData.isEmpty ? 200 : 54
+//        return sampleData.isEmpty ? 200 : 54
+        return 54
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return sampleData.count == 0 ? nil : footerView
+//        return sampleData.count == 0 ? nil :
+        return footerView
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -84,16 +104,16 @@ extension TomorrowViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let count = sampleData.count
-        if count == 0 {
-            guard let emptyCell = tableView.dequeueReusableCell(withIdentifier: EmptyTableViewCell.identifier, for: indexPath) as? EmptyTableViewCell else { return UITableViewCell() }
-            return emptyCell
-        } else {
+//        let count = sampleData.count
+//        if count == 0 {
+//            guard let emptyCell = tableView.dequeueReusableCell(withIdentifier: EmptyTableViewCell.identifier, for: indexPath) as? EmptyTableViewCell else { return UITableViewCell() }
+//            return emptyCell
+//        } else {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: TomorrowTableViewCell.identifier, for: indexPath) as? TomorrowTableViewCell else { return UITableViewCell() }
             cell.setData(sampleData[indexPath.row])
             
             return cell
-        }
+        
     }
 }
 
@@ -125,7 +145,7 @@ final class TomorrowHeaderView: UIView {
 }
 
 final class TomorrowFooterView: UIView{
-    private let button = UIButton().then {
+    let button = UIButton().then {
         $0.setTitle("저장하기", for: .normal)
         $0.titleLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         $0.backgroundColor = Color.mingBlack
