@@ -31,6 +31,8 @@ class BaseNavigationController: UINavigationController {
                 )
             )
     }
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +45,7 @@ extension BaseNavigationController {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithTransparentBackground()
         appearance.titleTextAttributes = [
-            .font: UIFont.systemFont(ofSize: 17),
+            .font: UIFont.boldSystemFont(ofSize: 22),
             .foregroundColor: Color.mingBlack
         ]
 

@@ -71,9 +71,10 @@ class ViewController: UIViewController {
         guard let tomorrowViewController = UIStoryboard(name: "Tomorrow", bundle: nil).instantiateViewController(withIdentifier: "TomorrowViewController") as? TomorrowViewController
         else { return }
         
-        tomorrowViewController.modalPresentationStyle = .overFullScreen
+        let nav = BaseNavigationController(rootViewController: tomorrowViewController)
+        nav.modalPresentationStyle = .overFullScreen
         tomorrowViewController.delegate = self
-        self.present(tomorrowViewController, animated: true)
+        self.present(nav, animated: true)
     }
     
     @objc
