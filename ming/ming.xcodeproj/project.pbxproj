@@ -15,6 +15,8 @@
 		23DB279628395E450028308F /* Tomorrow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23DB279528395E450028308F /* Tomorrow.storyboard */; };
 		23DB279828395E510028308F /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23DB279728395E510028308F /* TomorrowViewController.swift */; };
 		7546C79E065A267D3C1F7EC1 /* Pods_ming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */; };
+		B57F70472839843800DCD8E4 /* PopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B57F70462839843800DCD8E4 /* PopUp.storyboard */; };
+		B57F704C2839883600DCD8E4 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57F704B2839883600DCD8E4 /* PopUpViewController.swift */; };
 		B5A3FF5928396C6A00252DE0 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A3FF5828396C6A00252DE0 /* CheckView.swift */; };
 		B5A3FF5B2839773800252DE0 /* check.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5A3FF5A2839773800252DE0 /* check.storyboard */; };
 		DD2426DD28390D0F00C160FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2426DC28390D0F00C160FF /* AppDelegate.swift */; };
@@ -54,6 +56,8 @@
 		23DB279528395E450028308F /* Tomorrow.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tomorrow.storyboard; sourceTree = "<group>"; };
 		23DB279728395E510028308F /* TomorrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
 		46EF0EF93EFF32ECC69243B1 /* Pods-ming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ming.debug.xcconfig"; path = "Target Support Files/Pods-ming/Pods-ming.debug.xcconfig"; sourceTree = "<group>"; };
+		B57F70462839843800DCD8E4 /* PopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PopUp.storyboard; sourceTree = "<group>"; };
+		B57F704B2839883600DCD8E4 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		B5A3FF5828396C6A00252DE0 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
 		B5A3FF5A2839773800252DE0 /* check.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = check.storyboard; sourceTree = "<group>"; };
 		DD2426D928390D0F00C160FF /* ming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ming.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +130,22 @@
 				E3EB98FCC8886FF0B47FA919 /* Pods_ming.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B57F70452839842400DCD8E4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				B57F70462839843800DCD8E4 /* PopUp.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		B57F70482839880B00DCD8E4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B57F704B2839883600DCD8E4 /* PopUpViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		B5A3FF5128396BCC00252DE0 /* Xib */ = {
@@ -218,6 +238,8 @@
 			isa = PBXGroup;
 			children = (
 				DD2427282839803100C160FF /* View */,
+				B57F70482839880B00DCD8E4 /* ViewController */,
+				B57F70452839842400DCD8E4 /* Storyboard */,
 				B5A3FF5128396BCC00252DE0 /* Xib */,
 				DD2426E028390D0F00C160FF /* ViewController.swift */,
 				DD2426E228390D0F00C160FF /* Main.storyboard */,
@@ -391,6 +413,7 @@
 				23AB215928398E4F006045D7 /* EmptyTableViewCell.xib in Resources */,
 				234B619F28396976001CF528 /* TomorrowTableViewCell.xib in Resources */,
 				23DB279628395E450028308F /* Tomorrow.storyboard in Resources */,
+				B57F70472839843800DCD8E4 /* PopUp.storyboard in Resources */,
 				DD2426E928390D1100C160FF /* LaunchScreen.storyboard in Resources */,
 				DD2427052839134F00C160FF /* Color.xcassets in Resources */,
 				DD2426E628390D1100C160FF /* Assets.xcassets in Resources */,
@@ -450,6 +473,7 @@
 				B5A3FF5928396C6A00252DE0 /* CheckView.swift in Sources */,
 				DD2426FD283911E400C160FF /* Reusable.swift in Sources */,
 				DD242714283922BC00C160FF /* MingService.swift in Sources */,
+				B57F704C2839883600DCD8E4 /* PopUpViewController.swift in Sources */,
 				234B619E28396976001CF528 /* TomorrowTableViewCell.swift in Sources */,
 				234B61A328396C34001CF528 /* TomorrowDataModel.swift in Sources */,
 				23DB279828395E510028308F /* TomorrowViewController.swift in Sources */,
